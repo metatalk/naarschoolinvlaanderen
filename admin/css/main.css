@@ -1,0 +1,103 @@
+body {
+  background: #FFF;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+.container {
+  max-width: 1024px;
+  position: relative;
+  padding: 40px !important;
+}
+.loader {
+  display: none;
+}
+#optie-wrapper {
+  display: none;
+}
+#optie-list label {
+  font-weight: bold;
+}
+#optie-list small {
+  display: block;
+}
+#optie-list .form-row {
+  padding-top: 15px;
+}
+#optie-list .form-row:not(:last-child) {
+  border-bottom: 1px solid #EEE;
+}
+
+.optiesHeader {
+  font-weight: bold;
+  padding: 30px 0 0 0;
+  border-bottom: #EEE 1px solid;
+  margin-bottom: 20px;
+  font-size: 12px;
+}
+
+.plaatsen-row {
+  font-size: 13px;
+}
+
+.updatePlaatsen-loader {
+  position: relative;
+}
+.updatePlaatsen-loader .spinner-border {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: none;
+  z-index: 100000;
+}
+
+.updatePlaatsen-loader.loading .spinner-border {
+  display: block;
+  background: #FFF;
+}
+.is-volzet {
+  position: relative;
+}
+.---is-volzet:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.05);
+  z-index: 100000;
+}
+
+.log {
+  max-height: 500px;
+  overflow: scroll;
+  padding: 20px;
+  background: #FFF;
+}
+.log table {
+  font-size: 12px;
+}
+
+.userbar {
+  background: #FFF;
+  padding: 10px 15px;
+  font-size: 12px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.userbar p {
+  margin-bottom: 0;
+}
+
+.nav-link {
+  cursor: pointer;
+}
+
+[data-volzetdatum="ja"] {
+  display: none;
+}

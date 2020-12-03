@@ -1,0 +1,1 @@
+{"last_id":1084,"schema":{"id":"integer","opleiding_id":"integer","plaatsen":"integer","plaatsenbezet":"integer","plaatsenbezetind":"integer","percentageind":"double","datum":"string","volzet":"string","plaatsenanderstalig":"integer","plaatsenanderstaligbezet":"integer","percentageindtonen":"string","hide":"string"},"relations":{}}

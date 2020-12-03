@@ -1,0 +1,134 @@
+body {
+  height: 100vh;
+  overflow: hidden;
+}
+.app-wrapper,
+.app-results,
+.app-filter {
+  height: 100vh;
+  overflow: auto;
+}
+
+@media(max-width:768px) {
+  .app-filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    background: white;
+    transform: translateX(-100%);
+    transition: transform 0.2s;
+  }
+  .app-filter.active {
+    transform: translateX(0);
+  }
+}
+
+.app-filtergroup .btn-group-toggle {
+  width: 100%;
+}
+
+.app-title {
+  font-weight: normal;
+  color: #666;
+}
+
+.app-title strong {
+  color: #000;
+}
+
+.app-filtertitle {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.app-indicatormode .scholen-item-badge:not(.badge-danger){
+  background: #ffc107 !important;
+  color: #333 !important;
+}
+
+#show-title-opleiding,
+#show-title-gemeente,
+#show-indicator-leerlingen {
+  display: none;
+}
+
+.app-indicatormode #show-indicator-leerlingen {
+  display: inline-block;
+}
+
+.app-startscreen,
+.app-loadingscreen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #F4F4F4;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.1s opacity;
+}
+
+.app-startscreen-show,
+.app-loadingscreen-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.app-filtergroup-disabled {
+  opacity: 0.5;
+}
+
+.app-secundair #filter-opleiding,
+#noresults {
+  display: none;
+}
+
+.downloadExport {
+  position: fixed;
+  top: 20px;
+  right: 0;
+  width: 100px;
+  height: 30px;
+  background: red;
+}
+
+.card-school {
+  border-color: rgba(0,0,0,.2) !important;
+}
+
+.secundairhoger .hideonsecundairhoger {
+  display: none;
+}
+.showonsecundairhoger {
+  display: none;
+}
+.secundairhoger .showonsecundairhoger {
+  display: inline-block;
+}
+.closegemeentelist {
+  position: absolute;
+  top: 280px;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  padding: 9px;
+  display: none;
+}
+
+.overlay {
+  top:0;
+  left:0;
+  background:rgba(0,0,0,0.9);
+  z-index: 1000000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s linear;
+}
+
+.overlay.loading {
+  opacity: 1;
+  visibility: visible;
+}

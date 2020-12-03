@@ -1,0 +1,1 @@
+{"last_id":65534,"schema":{"id":"integer","nummer_instelling":"string","intern_volgnr_vpl":"string","korte_naam_instell":"string","huisnr":"string","busnr":"string","postcode":"string","naam_fusiegemeente":"string","korte_naam":"string","ko_onderwijsvorm_s":"string","natuurlijk_leerjr":"string","leerjaar":"string","graad_eht":"string"},"relations":{}}

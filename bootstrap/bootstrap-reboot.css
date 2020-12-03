@@ -1,0 +1,386 @@
+/*!
+ * Bootstrap Reboot v4.1.1 (https://getbootstrap.com/)
+ * Copyright 2011-2018 The Bootstrap Authors
+ * Copyright 2011-2018 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Forked from Normalize.css, licensed MIT (https://github.com/necolas/normalize.css/blob/master/LICENSE.md)
+ */
+/* line 21, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* line 27, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -ms-overflow-style: scrollbar;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+/* line 45, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
+  display: block;
+}
+
+/* line 57, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+body {
+  margin: 0;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #424242;
+  text-align: left;
+  background-color: #f4f3f2;
+}
+
+/* line 73, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+[tabindex="-1"]:focus {
+  outline: 0 !important;
+}
+
+/* line 83, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+/* line 99, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* line 109, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 121, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+abbr[title],
+abbr[data-original-title] {
+  text-decoration: underline;
+  text-decoration: underline dotted;
+  cursor: help;
+  border-bottom: 0;
+}
+
+/* line 129, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+address {
+  margin-bottom: 1rem;
+  font-style: normal;
+  line-height: inherit;
+}
+
+/* line 135, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+ol,
+ul,
+dl {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* line 142, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+ol ol,
+ul ul,
+ol ul,
+ul ol {
+  margin-bottom: 0;
+}
+
+/* line 149, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+dt {
+  font-weight: 500;
+}
+
+/* line 153, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+dd {
+  margin-bottom: .5rem;
+  margin-left: 0;
+}
+
+/* line 158, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+blockquote {
+  margin: 0 0 1rem;
+}
+
+/* line 162, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 167, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/* line 173, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 182, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+sub,
+sup {
+  position: relative;
+  font-size: 75%;
+  line-height: 0;
+  vertical-align: baseline;
+}
+
+/* line 190, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+sub {
+  bottom: -.25em;
+}
+
+/* line 191, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+sup {
+  top: -.5em;
+}
+
+/* line 198, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+a {
+  color: #0275D8;
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
+/* line 13, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/mixins/_hover.scss */
+a:hover {
+  color: #0275D8;
+  text-decoration: underline;
+}
+
+/* line 216, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+a:not([href]):not([tabindex]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 17, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/mixins/_hover.scss */
+a:not([href]):not([tabindex]):hover, a:not([href]):not([tabindex]):focus {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* line 225, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+a:not([href]):not([tabindex]):focus {
+  outline: 0;
+}
+
+/* line 235, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+pre,
+code,
+kbd,
+samp {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 1em;
+}
+
+/* line 243, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  -ms-overflow-style: scrollbar;
+}
+
+/* line 260, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+figure {
+  margin: 0 0 1rem;
+}
+
+/* line 270, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* line 275, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 284, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+table {
+  border-collapse: collapse;
+}
+
+/* line 288, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+caption {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  color: #6c757d;
+  text-align: left;
+  caption-side: bottom;
+}
+
+/* line 296, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+th {
+  text-align: inherit;
+}
+
+/* line 307, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+label {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+/* line 316, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+button {
+  border-radius: 0;
+}
+
+/* line 324, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
+/* line 329, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+input,
+button,
+select,
+optgroup,
+textarea {
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* line 340, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+button,
+input {
+  overflow: visible;
+}
+
+/* line 345, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 353, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/* line 361, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  padding: 0;
+  border-style: none;
+}
+
+/* line 369, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+input[type="radio"],
+input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* line 376, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  -webkit-appearance: listbox;
+}
+
+/* line 388, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+textarea {
+  overflow: auto;
+  resize: vertical;
+}
+
+/* line 394, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+/* line 409, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+legend {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  padding: 0;
+  margin-bottom: .5rem;
+  font-size: 1.5rem;
+  line-height: inherit;
+  color: inherit;
+  white-space: normal;
+}
+
+/* line 421, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/* line 426, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/* line 431, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+[type="search"] {
+  outline-offset: -2px;
+  -webkit-appearance: none;
+}
+
+/* line 444, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/* line 454, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+::-webkit-file-upload-button {
+  font: inherit;
+  -webkit-appearance: button;
+}
+
+/* line 463, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+output {
+  display: inline-block;
+}
+
+/* line 467, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+summary {
+  display: list-item;
+  cursor: pointer;
+}
+
+/* line 472, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+template {
+  display: none;
+}
+
+/* line 478, /Users/simon/Dropbox/Development/naarschool/scss/bootstrap/_reboot.scss */
+[hidden] {
+  display: none !important;
+}
+
+/*# sourceMappingURL=../../bootstrap/bootstrap-reboot.map */
