@@ -244,7 +244,7 @@ $(document).ready(function() {
     var leerjarenList = [];
     for(i=0; i < data.length; i++) {
       for(r = 0; r < data[i].opleidingen.length; r++){
-          if(leerjarenList.filter(function(e) { return e.leerjaar.trim() === data[i].opleidingen[r].leerjaar.trim(); }).length <= 0 && data[i].opleidingen[r].leerjaar !== ''){
+          if(data[i].opleidingen[r].leerjaar !== null && leerjarenList.filter(function(e) { return e.leerjaar.trim() === data[i].opleidingen[r].leerjaar.trim(); }).length <= 0 && data[i].opleidingen[r].leerjaar !== ''){
               leerjarenList.push({'leerjaar': data[i].opleidingen[r].leerjaar.trim(),'opleiding': data[i].opleidingen[r].opleiding});
           }
       }
@@ -372,8 +372,12 @@ $(document).ready(function() {
 });
 
 Handlebars.registerHelper('trimString', function(passedString) {
+  if(passedString !== null && passedString.length > 0) {
     var theString = passedString.trim();
-    return new Handlebars.SafeString(theString)
+    return new Handlebars.SafeString(theString);
+  } else {
+    return passedString;
+  }
 });
 
 // For todays date;
